@@ -26,6 +26,6 @@ stages:
         command: buildAndPush
         dockerfile: '**/Dockerfile'
         repository: $(imageRepository)
-        containerRegistry: $(dockerRegistryServiceConnection)
+        containerRegistry: 'eyeac.azurecr.io'
         tags: |
           $(tag)
